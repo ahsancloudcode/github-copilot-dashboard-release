@@ -8,7 +8,18 @@ git clone https://github.com/ahsancloudcode/github-copilot-dashboard-release.git
 cd github-copilot-dashboard-release
 ```
 
-### Step 2: Setup Configuration
+### Step 2: Extract Pre-built Application
+```powershell
+# Windows PowerShell - Extract the pre-built .output folder
+Expand-Archive -Path .output.zip -DestinationPath . -Force
+```
+
+**OR Linux/Mac:**
+```bash
+unzip -o .output.zip
+```
+
+### Step 3: Setup Configuration
 ```bash
 # Copy the configuration template
 cp .env-copy.example .env-copy
@@ -24,13 +35,13 @@ cp .env-copy.example .env-copy
 - `NUXT_GITHUB_TOKEN` - GitHub token (leave empty to skip)
 - `NUXT_PUBLIC_GITHUB_ORG` - Your organization name
 
-### Step 3: Run Dashboard
+### Step 4: Run Dashboard
 ```bash
-npm install    # First time only (3 minutes)
-npm run dev
+npm install    # First time only (1 minute - installs dependencies)
+npm run dev    # Starts dashboard (10 seconds)
 ```
 
-**Dashboard opens at:** http://localhost:3000
+**Dashboard opens at:** http://localhost:3001
 
 ---
 
