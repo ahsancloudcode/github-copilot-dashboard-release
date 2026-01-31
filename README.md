@@ -2,11 +2,15 @@
 
 > **View and manage all your GitHub Copilot prompts in one place** 📊
 
-This is the **pre-built, ready-to-run version** of the GitHub Copilot Prompts Dashboard. No build step needed!
+This is the **ready-to-run version** of the GitHub Copilot Prompts Dashboard.
 
 ---
 
 ## 🚀 Quick Start (5 minutes)
+
+### ⚠️ Important: Build Required (First Time Only)
+
+The `.output/` folder is **not included** in the repository. You need to build it locally:
 
 ### Step 1: Clone this Repository
 ```bash
@@ -14,29 +18,43 @@ git clone https://github.com/ahsancloudcode/github-copilot-dashboard-release.git
 cd github-copilot-dashboard-release
 ```
 
-### Step 2: Setup Your Configuration
+### Step 2: Install Dependencies
+```bash
+# This will install both root and server dependencies
+# Takes ~2 minutes on first install
+npm install
+```
+
+The postinstall script will automatically:
+- Install `.output/server` dependencies
+- Prepare everything for running
+
+### Step 3: Setup Your Configuration (Optional)
 ```bash
 # Create your local configuration file
 cp .env-copy.example .env-copy
 ```
 
-**Edit `.env-copy` and fill in your values:**
-```bash
-# Edit with your favorite editor (VS Code, Notepad++, etc.)
-```
-
-**What to fill:**
-- `NUXT_SESSION_PASSWORD` - Any random string (32+ characters)
-- `NUXT_GITHUB_TOKEN` - (Optional) Get from https://github.com/settings/tokens
+**Edit `.env-copy` to add (optional):**
+- `NUXT_GITHUB_TOKEN` - Get from https://github.com/settings/tokens
 - `NUXT_PUBLIC_GITHUB_ORG` - Your GitHub organization name
 
-### Step 3: Install & Run
+### Step 4: Run the Dashboard
 ```bash
-npm install
 npm run dev
 ```
 
-**Dashboard opens at:** http://localhost:3000
+**Dashboard opens at:** http://localhost:3001
+
+---
+
+## 📖 Detailed Setup
+
+**For complete build instructions and troubleshooting, see:**
+- [BUILD_INSTRUCTIONS.md](./BUILD_INSTRUCTIONS.md) - Detailed setup guide
+- [QUICK_START.md](./QUICK_START.md) - 5-minute quick reference  
+- [TESTING_GUIDE.md](./TESTING_GUIDE.md) - Testing scenarios
+- [USER_WORKFLOW.md](./USER_WORKFLOW.md) - Complete workflow
 
 ---
 
@@ -47,6 +65,7 @@ npm run dev
 ✅ Search & filter through all conversations  
 ✅ View GitHub Copilot metrics (if GitHub token provided)  
 ✅ Statistics & analytics  
+✅ Export data to PDF  
 ✅ Real-time updates  
 ✅ Completely private (runs locally)  
 
