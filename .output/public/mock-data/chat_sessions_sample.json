@@ -1,0 +1,102 @@
+[
+  {
+    "id": "session-1",
+    "title": "Whisper Transcription: Long Audio to Text",
+    "description": "download-youtube-videos-and-transcription-generator use this file and add code of whisper https://huggingface.co/openai/whisper-...",
+    "prompt_count": 12,
+    "start_date": "2025-12-19T10:00:00Z",
+    "end_date": "2026-01-02T18:00:00Z",
+    "tags": ["download-youtube-videos-and-transcription-generator"],
+    "source": "from GitHub Copilot"
+  },
+  {
+    "id": "session-2",
+    "title": "CDA Validation: Comparing Resolved XML Errors",
+    "description": "download-youtube-videos-and-transcription-generator Error in Happy Kid12_1_2025_10_15_34_AM P3.xml file : 'The scenario requires a...",
+    "prompt_count": 7,
+    "start_date": "2025-12-25T09:00:00Z",
+    "end_date": "2025-12-25T16:30:00Z",
+    "tags": ["download-youtube-videos-and-transcription-generator"],
+    "source": "from GitHub Copilot"
+  },
+  {
+    "id": "session-3",
+    "title": "Missing Allergy Author Entries: CDA Analysis",
+    "description": "download-youtube-videos-and-transcription-generator Patient_cda_save(20.xml mai yeh error hai , but Happy Kid wali xml file theek hai...",
+    "prompt_count": 14,
+    "start_date": "2025-12-24T11:00:00Z",
+    "end_date": "2025-12-25T14:00:00Z",
+    "tags": ["download-youtube-videos-and-transcription-generator"],
+    "source": "from GitHub Copilot"
+  },
+  {
+    "id": "session-4",
+    "title": "Vue 3 Component Development with TypeScript",
+    "description": "How do I create a new Vue component with TypeScript? Need to implement composition API with proper type safety and best practices...",
+    "prompt_count": 8,
+    "start_date": "2026-01-09T10:00:00Z",
+    "end_date": "2026-01-09T15:30:00Z",
+    "tags": ["vue", "typescript", "composition-api"],
+    "source": "from GitHub Copilot"
+  },
+  {
+    "id": "session-5",
+    "title": "Nuxt 3 API Integration and Data Fetching",
+    "description": "What's the best way to handle API calls in Nuxt 3? Looking for server-side rendering with $fetch and useFetch composables...",
+    "prompt_count": 6,
+    "start_date": "2026-01-08T13:00:00Z",
+    "end_date": "2026-01-08T17:45:00Z",
+    "tags": ["nuxt3", "api", "ssr"],
+    "source": "from GitHub Copilot"
+  },
+  {
+    "id": "session-6",
+    "title": "Vuetify Data Tables: Custom Templates & Pagination",
+    "description": "Explain how to use Vuetify data tables with custom templates and implement pagination with sorting functionality...",
+    "prompt_count": 5,
+    "start_date": "2026-01-08T14:00:00Z",
+    "end_date": "2026-01-08T16:30:00Z",
+    "tags": ["vuetify", "data-table", "pagination"],
+    "source": "from GitHub Copilot"
+  },
+  {
+    "id": "session-7",
+    "title": "Python Data Processing with Pandas",
+    "description": "Write a Python function to process CSV files efficiently using pandas library with error handling and data validation...",
+    "prompt_count": 9,
+    "start_date": "2026-01-07T09:00:00Z",
+    "end_date": "2026-01-07T14:20:00Z",
+    "tags": ["python", "pandas", "csv"],
+    "source": "from GitHub Copilot"
+  },
+  {
+    "id": "session-8",
+    "title": "TypeScript Debugging and Error Resolution",
+    "description": "How to debug TypeScript errors in VS Code? Need guidance on using built-in TypeScript server and debugging tools...",
+    "prompt_count": 4,
+    "start_date": "2026-01-07T12:00:00Z",
+    "end_date": "2026-01-07T13:45:00Z",
+    "tags": ["typescript", "debugging", "vscode"],
+    "source": "from GitHub Copilot"
+  },
+  {
+    "id": "session-9",
+    "title": "Responsive CSS Grid Layouts",
+    "description": "Create a responsive CSS grid layout using modern CSS features including grid-template-areas and media queries...",
+    "prompt_count": 3,
+    "start_date": "2026-01-06T15:00:00Z",
+    "end_date": "2026-01-06T17:30:00Z",
+    "tags": ["css", "grid", "responsive-design"],
+    "source": "from GitHub Copilot"
+  },
+  {
+    "id": "session-10",
+    "title": "SQL Database Joins and Optimization",
+    "description": "Explain SQL joins with examples including INNER, LEFT, RIGHT, and FULL OUTER joins with performance optimization tips...",
+    "prompt_count": 6,
+    "start_date": "2026-01-06T16:00:00Z",
+    "end_date": "2026-01-06T18:45:00Z",
+    "tags": ["sql", "database", "joins"],
+    "source": "from GitHub Copilot"
+  }
+]
