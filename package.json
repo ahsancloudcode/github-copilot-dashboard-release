@@ -5,6 +5,7 @@
   "main": ".output/server/index.mjs",
   "type": "module",
   "scripts": {
+    "postinstall": "cd .output/server && npm install --no-save && cd ../..",
     "dev": "node .output/server/index.mjs",
     "start": "node .output/server/index.mjs",
     "health": "curl http://localhost:3000/api/health"
