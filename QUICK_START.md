@@ -19,26 +19,48 @@ Expand-Archive -Path .output.zip -DestinationPath . -Force
 unzip -o .output.zip
 ```
 
-### Step 3: Setup Configuration
-```bash
-# Copy the configuration template
-cp .env-copy.example .env-copy
+### Step 3: Generate Configuration (Auto)
+**Best Method - Automatic Setup:**
 
-# Edit .env-copy with your values (open in any editor)
-# Only required: NUXT_SESSION_PASSWORD
+**Windows:**
+```powershell
+# PowerShell (Recommended)
+.\setup.ps1
+
+# OR Command Prompt
+setup.bat
 ```
 
-**Required Fields:**
-- `NUXT_SESSION_PASSWORD` - Any random string (32+ characters)
-
-**Optional Fields:**
-- `NUXT_GITHUB_TOKEN` - GitHub token (leave empty to skip)
-- `NUXT_PUBLIC_GITHUB_ORG` - Your organization name
-
-### Step 4: Run Dashboard
+**Linux/Mac:**
 ```bash
-npm install    # First time only (1 minute - installs dependencies)
-npm run dev    # Starts dashboard (10 seconds)
+# Coming soon - For now, use manual method below
+```
+
+**What this does:**
+- ✅ Generates secure random password
+- ✅ Creates .env-copy automatically
+- ✅ Ready to run!
+
+---
+
+### Alternative: Manual Configuration
+```bash
+# Copy template
+cp .env-copy.example .env-copy
+
+# Edit and add password (REQUIRED - must be 32+ characters)
+# Change this: NUXT_SESSION_PASSWORD=
+# To:         NUXT_SESSION_PASSWORD=YourRandomPasswordHere123456789
+```
+
+### Step 4: Install Dependencies
+```bash
+npm install
+```
+
+### Step 5: Run Dashboard
+```bash
+npm run dev
 ```
 
 **Dashboard opens at:** http://localhost:3001

@@ -8,26 +8,41 @@ This is the **ready-to-run version** of the GitHub Copilot Prompts Dashboard.
 
 ## 🚀 Quick Start (5 minutes)
 
-### ⚠️ Important: Build Required (First Time Only)
-
-The `.output/` folder is **not included** in the repository. You need to build it locally:
-
-### Step 1: Clone this Repository
+### Step 1: Clone & Extract
 ```bash
 git clone https://github.com/ahsancloudcode/github-copilot-dashboard-release.git
 cd github-copilot-dashboard-release
+
+# Extract pre-built application (Windows)
+Expand-Archive -Path .output.zip -DestinationPath . -Force
+
+# OR Extract (Linux/Mac)
+unzip -o .output.zip
 ```
 
-### Step 2: Install Dependencies
+### Step 2: Generate Configuration ⭐ **IMPORTANT**
+
+**Windows - Auto Setup (Recommended):**
+```powershell
+.\setup.ps1
+```
+
+**Manual Setup (All platforms):**
 ```bash
-# This will install both root and server dependencies
-# Takes ~2 minutes on first install
-npm install
+cp .env-copy.example .env-copy
+
+# ⚠️ MUST EDIT: Open .env-copy and set a password
+# Change: NUXT_SESSION_PASSWORD=
+# To:     NUXT_SESSION_PASSWORD=YourRandomPassword123456789
 ```
 
-The postinstall script will automatically:
-- Install `.output/server` dependencies
-- Prepare everything for running
+### Step 3: Install & Run
+```bash
+npm install
+npm run dev
+```
+
+**Dashboard opens at:** http://localhost:3001
 
 ### Step 3: Setup Your Configuration (Optional)
 ```bash
