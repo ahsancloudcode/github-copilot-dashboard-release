@@ -236,6 +236,5 @@ Ctrl + C
 
 اگر کوئی issue ہو تو:
 - GitHub Issue: https://github.com/ahsancloudcode/github-copilot-dashboard-release/issues
-- Extension Issues: https://github.com/ahsancloudcode/GitHub-Copilot-Prompts-Viewer/issues
 
 Happy coding! 🚀

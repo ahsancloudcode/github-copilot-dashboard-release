@@ -148,16 +148,9 @@ Download this folder and run the batch/PowerShell script.
 - `start-dashboard.bat` (double-click)
 - Or `start-dashboard.ps1` (right-click → Run with PowerShell)
 
-### 3️⃣ **Clone Repository** (Advanced)
+### 3️⃣ **Source Code** (For Developers)
 
-Clone the full source repository for development/customization.
-
-```bash
-git clone https://github.com/ahsancloudcode/GitHub-Copilot-Prompts-Viewer.git
-cd GitHub-Copilot-Prompts-Viewer
-npm install
-npm run dev
-```
+For development and customization, refer to the main repository documentation.
 
 ---
 
@@ -291,7 +284,6 @@ NUXT_PUBLIC_SCOPE=organization
 
 - **Quick Reference:** See `QUICK_START.md`
 - **Full Documentation:** See docs folder
-- **GitHub Repository:** https://github.com/ahsancloudcode/GitHub-Copilot-Prompts-Viewer
 - **Issues & Questions:** Open an issue on GitHub
 
 ---

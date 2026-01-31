@@ -270,7 +270,6 @@ If you add a GitHub token:
 **Issues?**
 1. Check troubleshooting section above
 2. GitHub Issues: https://github.com/ahsancloudcode/github-copilot-dashboard-release/issues
-3. Extension Issues: https://github.com/ahsancloudcode/GitHub-Copilot-Prompts-Viewer/issues
 
 **Questions?**
 - See USER_WORKFLOW.md for complete workflow
