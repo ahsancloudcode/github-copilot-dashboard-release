@@ -167,6 +167,21 @@ Just `npm install` → `npm run dev` → Done! ✅
 
 ## 🆘 Troubleshooting
 
+### 500 Server Error / API errors
+```
+Error: [GET] "/api/seats?scope=organization": 500 Server Error
+```
+
+**Solution:**
+1. Make sure `NUXT_PUBLIC_IS_DATA_MOCKED=true` in `.env-copy` (default)
+2. Dashboard should work fine with mock/demo data
+3. Only set to `false` if you have a valid GitHub token:
+   ```env
+   NUXT_PUBLIC_IS_DATA_MOCKED=false
+   NUXT_GITHUB_TOKEN=ghp_your_valid_token
+   NUXT_PUBLIC_GITHUB_ORG=your_org_name
+   ```
+
 ### Dashboard shows "Loading..."
 ```bash
 # Clear cache and restart

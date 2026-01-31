@@ -1,5 +1,7 @@
 # 🚀 Quick Start - 5 Minutes
 
+> ⚠️ **IMPORTANT:** Dashboard uses **MOCK DATA by default** for testing. No GitHub token required to test!
+
 ## Installation
 
 ### Step 1: Clone Repository
