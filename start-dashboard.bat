@@ -42,11 +42,15 @@ if not exist "%OUTPUT_DIR%" (
 
 REM Setup environment variables
 set NODE_ENV=production
+
+REM Generate secure session password (32+ characters)
 if not defined NUXT_SESSION_PASSWORD (
+    REM Use timestamp + random numbers to create 32+ char password
     for /f "tokens=1-5 delims=/: " %%d in ("%date% %time%") do (
-        set NUXT_SESSION_PASSWORD=copilot-!random!-!random!-!random!
+        set NUXT_SESSION_PASSWORD=copilot-dashboard-session-key-%%d%%e%%f!random!!random!
     )
 )
+
 set NUXT_PUBLIC_IS_DATA_MOCKED=true
 
 REM Check for .env.local file
