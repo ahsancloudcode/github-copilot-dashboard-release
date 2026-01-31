@@ -8,7 +8,7 @@ Write-Host ""
 # Generate random password (32+ characters)
 $randomPassword = -join ((1..40) | ForEach-Object { [char]((Get-Random -InputObject (33..126)) ) })
 
-# Create .env-copy with MOCK DATA ENABLED by default
+# Create .env.local with MOCK DATA ENABLED by default
 $envContent = @"
 # GitHub Copilot Prompts Dashboard - Configuration
 # Auto-generated: $(Get-Date)
@@ -30,21 +30,21 @@ NUXT_PUBLIC_GITHUB_ORG=
 "@
 
 # Write to file
-$envContent | Set-Content -Path ".env-copy" -Encoding UTF8
+$envContent | Set-Content -Path ".env.local" -Encoding UTF8
 
-Write-Host "✅ .env-copy created successfully!" -ForegroundColor Green
+Write-Host "✅ .env.local created successfully!" -ForegroundColor Green
 Write-Host ""
 Write-Host "Session Password: $randomPassword" -ForegroundColor Yellow
 Write-Host "Mock Data Enabled: YES (using demo data)" -ForegroundColor Green
 Write-Host ""
 Write-Host "📋 Next steps:" -ForegroundColor Cyan
-Write-Host "  1. (Optional) Edit .env-copy to add GitHub token for real data"
-Write-Host "  2. Run: npm install"
-Write-Host "  3. Run: npm run dev"
-Write-Host "  4. Open: http://localhost:3001/"
+Write-Host "  1. Run: npm install"
+Write-Host "  2. Run: npm run dev"
+Write-Host "  3. Open: http://localhost:3000/"
 Write-Host ""
 Write-Host "💡 Tips:" -ForegroundColor Yellow
 Write-Host "  • Dashboard uses MOCK DATA by default - perfect for testing"
-Write-Host "  • To use real GitHub data, add GitHub token to .env-copy"
+Write-Host "  • To use real GitHub data, edit .env.local and add GitHub token"
+Write-Host "  • Then set NUXT_PUBLIC_IS_DATA_MOCKED=false"
 Write-Host "  • Get token: https://github.com/settings/tokens" -ForegroundColor Gray
 

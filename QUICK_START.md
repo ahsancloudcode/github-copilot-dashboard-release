@@ -40,7 +40,8 @@ setup.bat
 
 **What this does:**
 - ✅ Generates secure random password
-- ✅ Creates .env-copy automatically
+- ✅ Creates .env.local automatically (Nuxt reads this)
+- ✅ Enables mock data by default
 - ✅ Ready to run!
 
 ---
@@ -48,7 +49,7 @@ setup.bat
 ### Alternative: Manual Configuration
 ```bash
 # Copy template
-cp .env-copy.example .env-copy
+cp .env-copy.example .env.local
 
 # Edit and add password (REQUIRED - must be 32+ characters)
 # Change this: NUXT_SESSION_PASSWORD=
@@ -65,7 +66,7 @@ npm install
 npm run dev
 ```
 
-**Dashboard opens at:** http://localhost:3001
+**Dashboard opens at:** http://localhost:3000
 
 ---
 
