@@ -1,0 +1,28 @@
+{
+  "name": "github-copilot-dashboard-release",
+  "version": "1.0.0",
+  "description": "GitHub Copilot Prompts Dashboard - Pre-built, ready-to-run release",
+  "main": ".output/server/index.mjs",
+  "type": "module",
+  "scripts": {
+    "dev": "node .output/server/index.mjs",
+    "start": "node .output/server/index.mjs",
+    "health": "curl http://localhost:3000/api/health"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
+  "keywords": [
+    "github-copilot",
+    "prompts",
+    "dashboard",
+    "analytics"
+  ],
+  "author": "Ahsan Saeed",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahsancloudcode/github-copilot-dashboard-release.git"
+  }
+}
